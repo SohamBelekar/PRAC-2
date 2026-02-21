@@ -4,7 +4,7 @@ import numpy as np
 from sklearn.linear_model import LinearRegression
 print("===ML Pipeline===")
 X=np.array([[1], [2], [3]])
-y=np.array([[2,4,6]])
+y=np.array([2,4,6])
 model=LinearRegression()
 model.fit(X,y)
 print("Model trained")
