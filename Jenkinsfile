@@ -4,13 +4,13 @@ pipeline {
         stage('Setup'){
             steps {
                 echo "Installing dependencies..."
-                bat 'python -m pip install -r requirements.txt'
+                bat '"C:\Users\DELL\AppData\Local\Programs\Python\Python313\python.exe" -m pip install -r requirements.txt'
             }
         }
         stage('Build and Test'){
             steps {
                 echo 'Running ML pipeline...'
-                bat 'python ml_pipeline.py'
+                bat '"C:\Users\DELL\AppData\Local\Programs\Python\Python313\python.exe" ml_pipeline.py'
             }
         }
     }
