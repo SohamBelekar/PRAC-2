@@ -4,13 +4,13 @@ pipeline {
         stage('Setup'){
             steps {
                 echo "Installing dependencies..."
-                bat 'python -m pip install -r requirements.txt'
+                cmd 'python -m pip install -r requirements.txt'
             }
         }
         stage('Build and Test'){
             steps {
                 echo 'Running ML pipeline...'
-                bat 'python ml_pipeline,py'
+                cmd 'python ml_pipeline,py'
             }
         }
     }
